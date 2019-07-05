@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
@@ -29,8 +30,9 @@ def calcula_tempo(temp):
 
     return temp/1
 
+temp = calcula_km()
 km = calcula_km()/1000
-m = calcula_tempo(calcula_km())/60
+m = calcula_tempo(temp)/60
 h, m = divmod(m, 60)
 
 print ()
