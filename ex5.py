@@ -30,7 +30,8 @@ def calcula_tempo(temp):
     return temp/1
 
 km = calcula_km()/1000
-h, m = divmod(calcula_tempo(calcula_km()), 60)
+m = calcula_tempo(calcula_km())/60
+h, m = divmod(m, 60)
 
 print ()
 print ("Num ano o elevador percorre", str(km) + "km.")
